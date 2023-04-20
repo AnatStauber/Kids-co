@@ -1,0 +1,61 @@
+nav >a:nth-child(3){
+    color:palevioletred;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffe4eb;
+    background-image: url(images/faq.png);
+    background-size: 100vw;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+/* h2 {
+  font-family: 'Alkatra', cursive;
+  text-align: center;
+  color: palevioletred;
+} */
+
+.accordion{
+  width: 60%;
+  /* position: absolute; */
+  /* margin: auto 0; */
+}
+
+
+.accordion-item .accordion-header .accordion-button.collapsed{
+    background-color: palevioletred;
+    color:white;
+    font-family: 'Alkatra', cursive;
+    border: 2px solid white;
+  }
+
+  .accordion-item .accordion-header .accordion-button.collapsed:hover{
+    font-size: large;
+    text-shadow:1px 1px 2px green;
+    
+
+  }
+  .accordion-item .accordion-body{
+    background: pink;
+  }
+
+  .accordion-item .accordion-header .accordion-button{
+    background-color: white;
+    font-family: 'Alkatra', cursive;
+    box-shadow: 1px 2px 3px;
+    color: green;
+  }
+
+  @media (max-width:991px){
+    body{
+      /* min-height: 100%; */
+      background-size: 100vh;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      
+  }
+}

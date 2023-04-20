@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    margin: 0;
+    /* overflow: hidden; */
+    background: rgb(243,174,174);
+    background: linear-gradient(0deg, rgba(243,174,174,1) 22%, rgba(241,202,210,1) 41%, rgba(251,235,235,1) 71%);
+}
+
+.container{
+    max-width: 900px;
+}
+
+.strip{
+    background-image: url("images/strip1.jpg");
+    background-size: cover;
+    background-position:center;
+    min-height: 350px;
+}
+.box p{
+    margin: 0;
+    /* overflow: hidden; */
+}
+.box img{
+    transition: 2000ms;
+}
+.box img:hover{
+    transform: rotate(360deg);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.strip .container .headline{
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-shadow:2px 2px palevioletred ;
+    /* font-size: xx-large; */
+}
+
+.slider{
+    font-family: 'Alkatra', cursive;
+}
+
+.carousel-item{
+    
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider .carousel-item .carousel-caption{
+    background-color: palevioletred;
+    opacity: 0.8;
+    /* max-width: 250px; */
+    margin:0 auto;
+}
+
+.slider .carousel-control-prev-icon , .slider .carousel-control-next-icon{
+    background-color: palevioletred;
+}
+
+.box{
+    background-color:#FBEBEB;
+}
+
+.box a{
+    color:palevioletred;   
+}
+
+.banners h2, .box h2{
+    font-family: 'Alkatra', cursive;
+}
+
+.banners p, .box p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.banners img{
+    transition: 2000ms; 
+    max-width: 75%;
+    /* max-width:20vh; */
+}
+
+.banners img:hover{
+    filter: grayscale(50%) blur(3px);
+}
+
+@media (max-width:991px){
+    
+    .strip{
+        min-height: 250px;
+    }
+
+    .box .box_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .box img{
+        max-width: 70%;
+    }
+
+     .carousel{
+        display: none;
+     }
+
+     .slider{
+        background-image: url(images/teen1.jpg);
+        background-size: cover;
+        background-position:center;
+        min-height: 350px;
+     }
+
+}
+

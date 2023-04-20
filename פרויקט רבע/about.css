@@ -1,0 +1,36 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Alkatra', cursive;
+    color: palevioletred;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.vision h2{
+    font-family: 'Alkatra', cursive;
+    color: palevioletred;
+}
+
+nav >a:nth-child(1){
+    color:palevioletred;
+}
+
+@media (max-width:991px){
+
+    .box .founder{
+        /* text-align: center; */
+        margin: 0;
+        text-align: center;
+    }
+
+  
+
+}
